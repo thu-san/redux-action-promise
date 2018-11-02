@@ -2,8 +2,9 @@
   "name": "redux-action-promise",
   "version": "0.0.1",
   "description": "Middleware for converting redux actions to promises",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "prepublish": "babel src --out-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +25,14 @@
   "bugs": {
     "url": "https://github.com/thu-san/redux-action-promise/issues"
   },
-  "homepage": "https://github.com/thu-san/redux-action-promise#readme"
+  "homepage": "https://github.com/thu-san/redux-action-promise#readme",
+  "babel": {
+    "presets": ["es2015", "stage-3"]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1"
+  }
 }
