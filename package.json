@@ -2,9 +2,10 @@
   "name": "redux-action-promise",
   "version": "0.0.4",
   "description": "Middleware for converting redux actions to promises",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,12 @@
   "bugs": {
     "url": "https://github.com/thu-san/redux-action-promise/issues"
   },
-  "homepage": "https://github.com/thu-san/redux-action-promise#readme"
+  "homepage": "https://github.com/thu-san/redux-action-promise#readme",
+  "devDependencies": {
+    "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "redux": "^4.0.1",
+    "redux-saga": "^0.16.2"
+  }
 }
