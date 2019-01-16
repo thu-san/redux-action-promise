@@ -27,10 +27,13 @@
   },
   "homepage": "https://github.com/thu-san/redux-action-promise#readme",
   "devDependencies": {
+    "@types/redux-actions": "^2.3.1",
     "typescript": "^3.2.2"
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "redux": "^4.0.1",
+    "redux-actions": "^2.6.4",
     "redux-saga": "^0.16.2"
   }
 }
